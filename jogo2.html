@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meteor — 60 segundos (Tema: Guerra Fria)</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div id="ui">
+    <h1>War 60s — Guerra Fria</h1>
+    <div id="topbar">
+      <div id="timer">Tempo: <span id="time">60</span>s</div>
+      <div id="score">Sobreviventes: <span id="surv">0</span></div>
+      <div id="lives">Vidas: <span id="life">3</span></div>
+    </div>
+    <div id="message"></div>
+  </div>
+
+  <canvas id="game" width="900" height="600"></canvas>
+
+  <!-- Tela Inicial -->
+  <div id="startScreen" class="overlay">
+    <h1>War 60s</h1>
+    <p>Sobreviva à chuva de bombas por 60 segundos!</p>
+    <button id="startBtn">Start</button>
+    <a href="index.html"><button id="startBtn">Modo Esteriótipo</button></a>
+  </div>
+
+  <!-- Tela de Seleção de Dificuldade -->
+  <div id="difficultyScreen" class="overlay">
+    <h1>Escolha a dificuldade</h1>
+    <button id="easyBtn">Fácil</button>
+    <button id="hardBtn">Difícil</button>
+  </div>
+
+  <!-- Tela de Game Over -->
+  <div id="gameover" class="overlay">
+    <h1>Game Over</h1>
+    <p>Você perdeu todas as vidas!</p>
+    <button id="restartBtn">Reiniciar</button>
+  </div>
+
+  <!-- Tela de Vitória -->
+  <div id="victory" class="overlay">
+    <h1>Vitória!</h1>
+    <p>Você sobreviveu aos 60 segundos!</p>
+    <button id="restartWinBtn">Jogar Novamente</button>
+  </div>
+
+  <footer id="flavor">
+    Jogo Feito pelos alunos: Enrique Felez, Kauã Buzzi, Luiz Pereira, Miguel Henriqueta, Pedro Henrique e Vinicius Cavilha.
+  </footer>
+
+  <script src="assets/js/game2.js"></script>
+</body>
+</html>
